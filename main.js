@@ -1,14 +1,12 @@
+function has_duplicate(lista) {
+  const vistos = new Set();
 
-
-function 
-    has_duplicate(nums){
-            
-        for (let i = 0; i < nums.length; i++) {
-            if (nums[i] === nums.length){
-                return true;
-            }
-            return false;
-        }
+  for (const numero of lista) {
+    if (vistos.has(numero)) {
+      return true;
     }
+    vistos.add(numero);
+  }
 
-    console.log(has_duplicate([1,2,3,3]));
+  return false;
+}
