@@ -1,5 +1,5 @@
 // ============================================================
-// VERSÃO ANTERIOR (do colega)
+// VERSÃO ANTERIOR
 // ============================================================
 // Usa um Set para rastrear elementos já vistos durante o loop.
 // Retorna true assim que encontra um duplicado — early return eficiente.
@@ -26,15 +26,15 @@ console.log(has_duplicate([1, 2, 3, 3])); // true
 // ============================================================
 
 // OTIMIZAÇÃO 1: Eliminação do loop explícito
-// A versão do colega itera manualmente com for...of e mantém um Set auxiliar.
+// A versão anterior itera manualmente com for...of e mantém um Set auxiliar.
 // A versão IA converte o array diretamente para Set e compara tamanhos — mais declarativo.
 
 // OTIMIZAÇÃO 2: Menos memória de controle
-// O colega cria um Set vazio e vai adicionando elemento por elemento.
+// A versão anterior cria um Set vazio e vai adicionando elemento por elemento.
 // A versão IA cria o Set de uma vez só, sem operações intermediárias.
 
 // OTIMIZAÇÃO 3: Early return vs retorno direto
-// O colega usa early return (bom para arrays grandes com duplicata no início).
+// A versão anterior usa early return (bom para arrays grandes com duplicata no início).
 // A versão IA sempre percorre o array inteiro — trade-off: menos código, mas sem early return.
 
 // OTIMIZAÇÃO 4: camelCase (hasDuplicate) — convenção padrão do JavaScript.
@@ -65,6 +65,6 @@ console.log(hasDuplicate([]));            // false — array vazio
 // | Casos extremos        | Cobertos                          | Cobertos                           |
 // ============================================================
 // Conclusão: ambas as versões são corretas e eficientes.
-// A versão do colega tem vantagem em arrays com duplicatas no início (early return).
+// A versão anterior tem vantagem em arrays com duplicatas no início (early return).
 // A versão IA é mais concisa e idiomática para casos gerais.
 // ============================================================
